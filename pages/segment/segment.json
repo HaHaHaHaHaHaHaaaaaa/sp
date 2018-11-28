@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+          "race": "/pages/race/race"
+    }
+}

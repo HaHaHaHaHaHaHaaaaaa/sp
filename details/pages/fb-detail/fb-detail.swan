@@ -1,0 +1,44 @@
+<view class="container">
+	<canvas class="banner">
+		<img src="../../../images/bb.jpg" class="imgs" />
+		<view class="text" >
+			<view class="matchtitle">{{details.match}} {{details.start_time}}</view>
+			<view class="vs">{{details.team_away}} VS {{details.team_home}}</view>
+		</view>
+	</canvas>
+	<view class="list">
+		<view class="row">
+			<text>{{details.code}}</text>
+			<text>{{details.status}}</text>
+		</view>
+		<view class="row">
+			<text>胜负平</text>
+			<text>{{details.odd_spf}}</text>
+		</view>
+		<view class="row">
+			<text>让球胜负平</text>
+			<text>{{details.odd_spf_r}}</text>
+		</view>
+		<view class="row">
+			<text>让球个数</text>
+			<text>{{details.odd_rang}}</text>
+		</view>
+		<view class="row">
+			<text>半全场胜平负</text>
+			<text class="ws">{{details.odd_spf_hf}}</text>
+		</view>
+		<view class="row">
+			<text>胜</text>
+			<text class="ws">{{details.odd_rate_s}}</text>
+		</view>
+		<view class="row">
+			<text>平</text>
+			<text>{{details.odd_rate_p}}</text>
+		</view>
+		<view class="row">
+			<text>负</text>
+			<text class="ws">{{details.odd_rate_f}}</text>
+		</view>
+
+	</view>
+</view>

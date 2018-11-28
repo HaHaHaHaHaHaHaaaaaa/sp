@@ -1,0 +1,36 @@
+<view class="container">
+	<picker   mode="date" value="{{dateDay}}" bind:change="dateChangeDay" fields="day">
+		<view class="date">
+			{{dateDay}}<image class="swan-icon" src="../../../images/open.png"></image>
+		</view>
+		 
+	</picker>
+	<view class="latest">
+		<view class="codes-header">
+			{{ awards.data[0].expect }}期开奖
+		</view>
+		<view class="codes">
+			<text s-for="awards.data[0].opencode" class="latest-item">
+				{{ item }}
+			</text>
+		</view>
+	</view>
+
+	<view class="latest">
+		<view class="list-header">
+			<label class="list-title1">历史开奖</label>
+		</view>
+	
+		<view s-for="awards.data" class="list-item">
+			<!-- <text style="padding-right:.06rem">{{ item.time }}</text> -->
+			<text style="padding-left: .06rem;">第{{ item.expect }}期</text>
+			<view class="list-codes">
+				<text s-for="awards.data[0].opencode" class="item">
+				{{ item }}
+			</text>
+			</view>
+		</view>
+
+	</view>
+
+</view>

@@ -1,0 +1,25 @@
+<view class="c2">
+	<view s-for="items" class=" {{index==selectedIndex ? 'selected':''}} " data-index="{{index}}" bind:tap="viewClicked">{{item}}</view>
+</view>
+
+<view class="container">
+
+	<view class="c3" s-if="selectedIndex===0 || selectedIndex===1 || selectedIndex===2">
+		<view s-for="item, index in lists" class="group-bd" data-id="{{item.id}}"  bind:tap="onItemClicked">
+			<view class="item-title">
+				<text class="item-name">{{item.name}} 第{{item.period}}期 开奖</text>
+				<text class="item-time">{{item.openTime}}</text>
+			</view>
+			<view class="item-code">
+				<text class="item-ic" s-for="code in item.lottery">{{code}}</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="c3" s-if="selectedIndex===3">
+		<race name="竞彩足球" hideTitle=ht category="fb" ></race>
+	</view>
+	<view class="c3" s-if="selectedIndex===4">
+		<race name="竞彩篮球" hideTitle=ht category="bb"></race>
+	</view>
+</view>

@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "race": "/pages/race/race"
+    },
+    "enablePullDownRefresh":true,
+     "navigationBarTitleText": ""
+}

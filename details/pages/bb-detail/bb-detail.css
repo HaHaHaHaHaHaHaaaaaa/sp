@@ -1,0 +1,47 @@
+.container{
+    /* margin:0 .17rem; */
+    background: #fff;
+    margin-bottom: .05rem;
+    font-size: .14rem;
+}
+.banner{
+  position: relative;
+  height: 1.90rem;
+   width: 100%;
+  color: #fff;
+  text-align: center;
+}
+.text{
+    position:absolute;width:100%;height:100%;z-index:189;top:0;left:0
+}
+.imgs{
+    position:absolute;width:100%;height:100%;z-index:188;top:0;left:0
+}
+
+.matchtitle{
+    margin-top: .27rem;
+    font-size: 0.20rem;
+    font-weight: 300;
+}
+.vs{
+    margin-top: .37rem;
+    font-size: 0.22rem;
+    font-weight: 400;
+}
+
+.row{
+    border-bottom: 2px solid #efefef;
+    padding: .17rem;
+}
+.row text:nth-child(2){
+    float: right;
+    clear: both;
+    content: ''
+}
+.ws{
+    word-break:break-all;
+    float:none !important;
+    clear: none;
+    display: flex;
+    padding-top: .08rem;
+}

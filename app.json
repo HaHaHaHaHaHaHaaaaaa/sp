@@ -1,0 +1,87 @@
+{
+    "debug": true,
+    "pages": [
+        "pages/lottery/lottery",
+        "pages/category/category",
+        "pages/me/me"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#da3131",
+        "navigationBarTitleText": "彩票小助手",
+        "navigationBarTextStyle": "white",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    },
+    "networkTimeout": {
+        "request": 30000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "tabBar": {
+        "color": "#a2a2a2",
+        "selectedColor": "#3388ff",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [{
+                "pagePath": "pages/lottery/lottery",
+                "iconPath": "images/component_normal.png",
+                "selectedIconPath": "images/component_selected.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/category/category",
+                "iconPath": "images/API_normal.png",
+                "selectedIconPath": "images/API_selected.png",
+                "text": "分类"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "iconPath": "images/API_normal.png",
+                "selectedIconPath": "images/API_selected.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "preloadRule": {
+        "pages/lottery/lottery": {
+            "network": "all",
+            "packages": [
+                "details",
+                "lists"
+            ]
+        },
+        "pages/me/me": {
+            "network": "all",
+            "packages": [
+                "my"
+            ]
+        }
+    },
+    "subPackages": [{
+            "root": "details",
+            "name": "details",
+            "pages": [
+                "pages/lottery-detail/lottery-detail",
+                "pages/bb-detail/bb-detail",
+                "pages/fb-detail/fb-detail"
+            ]
+        },
+        {
+            "root": "lists",
+            "name": "lists",
+            "pages": [
+                "pages/bb-ls/bb-ls",
+                "pages/fb-ls/fb-ls"
+            ]
+        }, {
+            "root": "my",
+            "name": "my",
+            "pages": [
+                "pages/about/about",
+                "pages/feedback/feedback",
+                "pages/declaration/declaration"
+            ]
+        }
+    ]
+}

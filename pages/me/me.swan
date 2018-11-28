@@ -1,0 +1,7 @@
+<view s-for="item, index in items" class="group-bd">
+	<view class="item border-bottom {{item.open ? '' : 'item-close'}}" bind:tap="itemClick" data-url="{{item.url}}">
+		<image class="item-logo" src="{{item.icon}}"></image>
+		<text class="item-desc">{{item.name}}</text>
+		<image class="item-logo item-toggle" src="../../images/right_arrow.png"></image>
+	</view>
+</view>

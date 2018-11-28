@@ -1,0 +1,84 @@
+.container{
+    margin:0 .17rem;
+    background: #fff;
+    margin-bottom: .05rem;
+    font-size: .14rem;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .12rem;
+    border-bottom: 8px solid #f5f5f5;
+    font-size: 16px;
+    border-top: 8px solid #f5f5f5;
+}
+.swan-icon {
+    width: .25rem;
+    height: .25rem;
+}
+.codes-header{
+    font-size: .16rem;
+    font-weight: 500;
+    padding: .17rem;
+    border-bottom: 1px solid #f5f5f5;
+}
+.codes{
+    display: flex;
+    align-items: center;
+     border-bottom: 8px solid #f5f5f5;
+     padding: .15rem .15rem;
+}
+
+.latest-item{
+    width: .10rem;
+    height: .10rem;
+    margin:0.03rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5353e0;
+    color: #fff;
+    padding: .17rem;
+    border-radius: .5rem;
+
+}
+
+.list-header{
+    background: #f5f5f5;
+    border-bottom: 8px solid #f5f5f5;
+}
+.list-title1{
+    font-size: .16rem;
+    font-weight: 500;
+    padding: .10rem;
+    text-align: center;
+    display: block;
+    background: #ff2f2f;
+    color: #fff;
+}
+
+.list-codes{
+    display: inline-flex;
+    align-items: center;
+    padding-left: .1rem;
+    margin: .06rem 0;
+}
+.list-item{
+    padding: .06rem;
+    border-bottom: 4px solid #f5f5f5;
+}
+
+
+.item{
+     width: .10rem;
+    height: .10rem;
+    margin:0.03rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5353e0;
+    color: #fff;
+    padding: .12rem;
+    border-radius: .5rem;
+}

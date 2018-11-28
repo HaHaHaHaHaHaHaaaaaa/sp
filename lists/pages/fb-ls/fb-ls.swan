@@ -1,0 +1,20 @@
+<view class="c1">
+	<picker mode="date" value="{{params.time}}" bind:change="dateChangeDay" fields="day">
+		<view class="date">
+			{{params.time}}
+			<image class="swan-icon" src="../../../images/open.png"></image>
+		</view>
+	</picker>
+	<view s-for="data" class="item" data-key="{{item.key}}" data-category="{{category}}" data-date="{{ item.date }}" bind:tap="onItemClicked">
+		<view class="item-header">
+			<text>{{item.code}}{{item.match}}{{item.odd_rang}}</text>
+			<text class="item-status">{{ item.updatetime}} {{item.status}}</text>
+		</view>
+		<view class="item-content">
+			<text>{{item.team_away}}</text>
+			<text class="vs">VS</text>
+			<text>{{item.team_home}}</text>
+		</view>
+	</view>
+
+</view>

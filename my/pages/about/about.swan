@@ -1,0 +1,15 @@
+<view class="container">
+	<view class="logo">
+		<image src="../../../images/logo.png"></image>
+	</view>
+	<view class="item">
+        <view class="row">
+            <text>官方邮箱</text>
+            <text class="r">admin@instreet.cn</text>
+        </view>
+         <view class="row">
+            <text>服务时间</text>
+            <text class="r">工作日:9:00-18:30</text>
+        </view>
+	</view>
+</view>

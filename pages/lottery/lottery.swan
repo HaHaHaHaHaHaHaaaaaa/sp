@@ -1,0 +1,22 @@
+<view class="group">
+	<swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+		<block s-for="imgUrl in imgs">
+			<swiper-item>
+				<image src="{{imgUrl}}" mode="scaleToFill" class="slide-image" />
+			</swiper-item>
+		</block>
+	</swiper>
+	<view s-for="item, index in items" class="group-bd" data-id="{{item.id}}" bind:tap="oneItemClick">
+		<view class="item-title">
+			<text class="item-name">{{item.name}} 第{{item.period}}期 开奖</text>
+			<text class="item-time">{{item.openTime}}</text>
+		</view>
+		<view class="item-code">
+			<text class="item-ic" s-for="code in item.lottery">{{code}}</text>
+		</view>
+	</view>
+
+	<race name="竞彩篮球" category="bb"></race>
+	<race name="竞彩足球" category="fb"></race>
+
+</view>
